@@ -75,6 +75,7 @@ my_stats_string
 Implement a `main()` function to display all  required information and calculations.
 Include a docstring describing its purpose. For example:
 
+```python
 def main():
     ''' Display all output'''
     print(my_name_string)
@@ -84,22 +85,23 @@ def main():
     print(numbers_string)
     print(radius_area_string)
     print(my_stats_string)
+```
 
-#### 5. Make The Module Importable
+#### 5. Conditional Script Execution
 
-Execute the main function only when the module is run as a script using the 
-standard boilerplate code. For example:
+Ensure the main function only executes when the script is run directly,
+not when imported as a module by using the standard boilerplate code.
+For example:
 
 ```python
 if __name__ == '__main__':
     main()
-``` 
-
+```
 
 #### 6. Module Design
 
 Keep the code simple and understandable, focusing on basic Python features.
-Add additional notes and experiments as you like. 
+Add additional notes and experiments as you like.
 Include a docstring at the top of the file describing its purpose. For example:
 
 ```python
@@ -108,8 +110,9 @@ Include a docstring at the top of the file describing its purpose. For example:
 
 ### Evaluation Criteria
 
-- Functionality. The project should be functional and meet all requirements.
-- Communication. The project should be well-written and well-documented.
-- Presentation. The project should be presented in a clear and organized manner.
-- Professional. The project should be submitted on time and reflect an original, creative effort.
+- Functionality: The project should be functional and meet all requirements.
+- Documentation: The project should be well-written and well-documented.
+- Presentation: The project should be presented in a clear and organized manner.
+- Professionalism: The project should be submitted on-time and reflect an original, creative effort.
 
+See rubric for additional information.
