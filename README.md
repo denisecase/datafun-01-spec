@@ -87,10 +87,10 @@ def main():
     print(my_stats_string)
 ```
 
-#### 5. Conditional Script Execution
+### Conditional Script Execution
 
 Ensure the main function only executes when the script is run directly,
-not when imported as a module by using the standard boilerplate code.
+not when imported as a module by using standard boilerplate code.
 For example:
 
 ```python
@@ -98,7 +98,7 @@ if __name__ == '__main__':
     main()
 ```
 
-#### 6. Module Design
+### Module Design
 
 Keep the code simple and understandable, focusing on basic Python features.
 Add additional notes and experiments as you like.
