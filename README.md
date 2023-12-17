@@ -2,113 +2,156 @@
 
 ## Overview
 
-This is the first in a series of modules focusing on developing Python skills for data analysis. 
-This module is designed to introduce basic Python data types and concepts.
+This project introduces Python for professional data analytics.
+We cover a bit of syntax and Python basics,
+but there is much more to writing professional Python.
+We'll cover syntax and basics in these first few projects,
+but we'll also introduce the key skills used in industry.
+We use this chance to teach basic Python data types and syntax as a focus for building your first Python module. The module provides an introductory byline for your hypothetical data analytics consulting company, while practicing data types, f-strings, descriptive statistics, and more.
 
 ## Deliverable Names
 
 - GitHub Repository:  datafun-01-attr
 - Documentation:      README.md
-- Script:             yourname_attr.py
+- Script:             yourname_utils.py
 
-Create a new GitHub repository with a default README.md. 
-In your GitHub repository, create new file with the name listed above.
-You are always welcome to use a pseudonym or brand name instead of your actual name.
-It should be pretty unique and consistent across all projects.
+Create a new GitHub repository with a default README.md.
+In your GitHub repository, create new empty file with the name listed above.
+The name can be your name as an analyst, or reflect a fake name or hypothetical data analytics consulting company, e.g.,  "case_utils.py" or "stellar_analytics_utils.py".
 
-## Module Specification
+## Objective
 
-### Objective
+Develop a Python module with a byline function displaying information about your data analytics consulting business or analyst profile. The byline should be constructed using various Python data types.
 
-Create a Python module to encapsulate general information attributes that demonstrate basic programming concepts and data types. 
-The module should be designed for easy import and reuse in future projects.
+## Requirements
 
-### Requirements
+### 1. Project Start
 
-#### 1. Analyst and Course Information
+Include a docstring at the top of the file describing its purpose. For example:
 
-Include private variables for the analyst's name (str), total number of courses taken (int), experience status (boolean), and hours invested in learning (float). 
-Follow Python convention to indicate private variables with a leading underscore.
+```python
+''' This module provides a reusable byline for the author's services. '''
+```
+
+### 2. Import Dependencies
+
+We'll use at least the statistics module from the Python Standard Library. You may use math or others in your code. Anything in the standard library is fair game.
+After the docstring, we import the modules used in this script. For example:
+
+```python
+import math
+import statistics
+```
+
+### 3. Define Variables of Different Types
+
+Define at least one variable of each of these types: str, int, float, bool, list of strings, list of numbers.
+The following example uses optional type hints. Follow naming conventions for variable names, but create your own names and values. Note boolean values are typically named as a question, e.g., has_international_presence.
+
+```python
+company_name: str = "Stellar Analytics Inc."
+count_active_projects: int = 5
+has_international_presence: bool = False
+average_client_satisfaction: float = 4.7
+services_offered: list = ["Data Analysis", "Machine Learning Consulting", "Business Intelligence Solutions"]
+satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
+```
+
+### 4. Define Formatted Strings
+
+Use f-strings to create formatted strings for non-string variables.
 For example:
 
 ```python
-_name
-_course_count
-_is_experienced
-_hours_invested
+active_projects_string: str = f"Active Projects: {count_active_projects}"
+international_presence_string: str = f"International Presence: {has_international_presence}"
+client_satisfaction_string: str = f"Average Client Satisfaction: {average_client_satisfaction}"
 ```
 
-#### 2. String Formatting
+### 5. Calculate Descriptive Statistics
 
-Use f-strings strings to create useful output strings containing the variables above. For example:
+Use built-in Python functions and the statistics module to calculate descriptive statistics for your numeric list.
+Python has built-in functions for calculating min(), max(), sum(), and len().
+The statistics module provides additional functions for mean(), mode(), median(), and stdev().
+
+CAUTION: Never name a variable min, max, sum, len, or any other built-in function name.
 
 ```python
-my_name_string
-course_count_string
-is_experienced_string
-hours_invested_string
+import statistics
+
+smallest= min(satisfaction_scores)
+largest= max(satisfaction_scores)
+total= sum(satisfaction_scores)
+count= len(satisfaction_scores)
+mean= statistics.mean(satisfaction_scores)
+mode= statistics.mode(satisfaction_scores)
+median= statistics.median(satisfaction_scores)
+standard_deviation=statistics.stdev(satisfaction_scores)
+
+stats_string: str = f"""
+Descriptive Statistics for Our Satisfaction Scores:
+  Smallest: {smallest}
+  Largest: {largest}
+  Total: {total}
+  Count: {count}
+  Mean: {mean}
+  Mode: {mode}
+  Median: {median}
+  Standard Deviation: {standard_deviation}
+"""
 ```
 
-#### 3. Math and Statistics
+### 6. Define Byline String
 
-Provide a list of numbers to demonstrate statistical functions. 
-Include examples of basic mathematical operations and integrate basic statistical calculations using Python's built-in math and statistics libraries. 
-For example:
+Create a multiline string to display your formatted information. For example:
 
 ```python
-_numbers
-_radius_area
-_my_stats
+byline: str = f"""
+{company_name}
+{active_projects_string}
+{international_presence_string}
+{client_satisfaction_string}
+{services_offered_string}
+{stats_string}
+"""
 ```
 
-Create corresponding f-strings for outputs. 
-For example:
+### 7. Define Main Function
 
-```python
-numbers_string
-radius_area_string
-my_stats_string
-```
-
-#### 4. Main Function
-
-Implement a `main()` function to display all  required information and calculations.
-Include a docstring describing its purpose. For example:
+Define a main() function that we can call to test our code and display all information.
 
 ```python
 def main():
     ''' Display all output'''
-    print(my_name_string)
-    print(course_count_string)
-    print(is_experienced_string)
-    print(hours_invested_string)
+    print(company_name)
+    print(active_projects_string)
+    print(international_presence_string)
+    print(client_satisfaction_string)
+    print(services_offered_string)
     print(numbers_string)
-    print(radius_area_string)
-    print(my_stats_string)
+    print(stats_string)
+
+    # If all of the above works, then the byline should work too:
+    print(byline)
+
 ```
 
-### Conditional Script Execution
+### 8. Conditional Script Execution
 
-Ensure the main function only executes when the script is run directly,
-not when imported as a module by using standard boilerplate code.
-For example:
+Execute the main() function when this script is run directly, but not if we import it as a module.
+Use standard boilerplate code.
 
 ```python
 if __name__ == '__main__':
     main()
 ```
 
-### Module Design
+## Module Design
 
 Keep the code simple and understandable, focusing on basic Python features.
 Add additional notes and experiments as you like.
-Include a docstring at the top of the file describing its purpose. For example:
 
-```python
-''' This module demonstrates basic Python data types and features. '''
-```
-
-### Evaluation Criteria
+## Evaluation Criteria
 
 - Functionality: The project should be functional and meet all requirements.
 - Documentation: The project should be well-written and well-documented.
@@ -116,3 +159,9 @@ Include a docstring at the top of the file describing its purpose. For example:
 - Professionalism: The project should be submitted on-time and reflect an original, creative effort.
 
 See rubric for additional information.
+
+## Resources
+
+- [Python Built-in Functions](https://docs.python.org/3/library/functions.html)
+- [Modules and Imports](https://docs.python-guide.org/writing/structure/#modules)
+- [Python Modules W3 Schools](https://www.w3schools.com/python/python_modules.asp)
