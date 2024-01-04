@@ -7,7 +7,9 @@ We cover a bit of syntax and Python basics,
 but there is much more to writing professional Python.
 We'll cover syntax and basics in these first few projects,
 but we'll also introduce the key skills used in industry.
-We use this chance to teach basic Python data types and syntax as a focus for building your first Python module. The module provides an introductory byline for your hypothetical data analytics consulting company, while practicing data types, f-strings, descriptive statistics, and more.
+We use this chance to teach basic Python data types and syntax as a focus for building your first Python module. 
+The module provides an introductory byline for your hypothetical data analytics consulting company, 
+while practicing data types, f-strings, descriptive statistics, and more.
 
 ## Deliverable Names
 
@@ -15,13 +17,14 @@ We use this chance to teach basic Python data types and syntax as a focus for bu
 - Documentation:      README.md
 - Script:             yourname_utils.py
 
-Create a new GitHub repository with a default README.md.
+Create a new GitHub repository with a default **README.md**.
 In your GitHub repository, create new empty file with the name listed above.
 The name can be your name as an analyst, or reflect a fake name or hypothetical data analytics consulting company, e.g.,  "case_utils.py" or "stellar_analytics_utils.py".
 
 ## Objective
 
-Develop a Python module with a byline function displaying information about your data analytics consulting business or analyst profile. The byline should be constructed using various Python data types.
+Develop a Python module with a byline function displaying information about your data analytics consulting business or analyst profile. 
+The byline should be constructed using various Python data types.
 
 ## Requirements
 
@@ -149,7 +152,8 @@ if __name__ == '__main__':
 ## Module Design
 
 Keep the code simple and understandable, focusing on basic Python features.
-Add additional notes and experiments as you like.
+Add notes and experiments as you like. 
+Your README.md should introduce and explain the project. 
 
 ## Evaluation Criteria
 
@@ -159,6 +163,12 @@ Add additional notes and experiments as you like.
 - Professionalism: The project should be submitted on-time and reflect an original, creative effort.
 
 See rubric for additional information.
+
+## Python Module Examples
+
+- [CPython JSON Tool](https://github.com/python/cpython/blob/main/Lib/json/tool.py)
+- [Requests Help Module](https://github.com/psf/requests/blob/main/src/requests/help.py)
+- [Speaking Wikipedia Module](https://github.com/ndleah/python-mini-project/blob/main/Speaking_Wikipedia/speaking_wikipedia.py)
 
 ## Resources
 
