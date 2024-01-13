@@ -104,9 +104,10 @@ Descriptive Statistics for Our Satisfaction Scores:
 """
 ```
 
-### 6. Define Byline String
+### 6. Define Byline String ⭐
 
-Create a multiline string to display your formatted information. For example:
+Create a multiline string named **byline** to display your formatted information.
+We'll use this byline in a future project. For example:
 
 ```python
 byline: str = f"""
