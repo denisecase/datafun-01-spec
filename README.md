@@ -3,13 +3,12 @@
 ## Overview
 
 This project introduces Python for professional data analytics.
-We cover a bit of syntax and Python basics,
-but there is much more to writing professional Python.
-We'll cover syntax and basics in these first few projects,
-but we'll also introduce the key skills used in industry.
-We use this chance to teach basic Python data types and syntax as a focus for building your first Python module. 
-The module provides an introductory byline for your hypothetical data analytics consulting company, 
-while practicing data types, f-strings, descriptive statistics, and more.
+We cover some syntax and Python basics,
+but there is much more to using Python professionally.
+In these first few projects, we introduce syntax along with key tools and skills used in industry.
+This project focues on basic data types and filel organization while building a reusable Python module. 
+The module provides an introductory byline for a hypothetical data analytics consulting company, 
+while demonstrating skills with data types, f-strings, descriptive statistics, and more.
 
 ## Deliverable Names
 
